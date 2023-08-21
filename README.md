@@ -1,0 +1,2 @@
+# MisConfiguracionesdeNeovim
+Configuraciónes de Neovim
