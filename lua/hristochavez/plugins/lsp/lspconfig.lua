@@ -15,8 +15,9 @@ local on_attach = function(client, bufnr)
     local opts = { silent = true, buffer = bufnr }
     keymap("n", "gp", "<cmd>Lspsaga peek_definition<CR>", opts)
     keymap("n", "gd", "<cmd>Lspsaga goto_definition<CR>", opts)
-    keymap("n", "<leader>k", "<cmd>Lspsaga hover_doc<CR>", opts)
-    keymap("n", "<leader>h", "<cmd>Lspsaga show_line_diagnostics<CR>", opts)
+    keymap("n", "<leader>hd", "<cmd>Lspsaga hover_doc<CR>", opts)
+    keymap("n", "<leader>sl", "<cmd>Lspsaga show_line_diagnostics<CR>", opts)
+    keymap("n", "<leader>ca", "<cmd>Lspsaga code_action<CR>", opts)
 end
 
 -- Habilitar el autocompletado.
