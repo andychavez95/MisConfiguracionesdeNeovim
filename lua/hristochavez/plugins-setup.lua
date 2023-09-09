@@ -81,6 +81,9 @@ return packer.startup(function(use)
 
     use("nvim-treesitter/nvim-treesitter")
 
+    -- Tema kanagawa.
+    use("rebelot/kanagawa.nvim")
+
     if packer_bootstrap then
         require("packer").sync()
     end
